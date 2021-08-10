@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title>kingscollegebudo</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/401f848463.js"></script>
+ </head>
+ <body>
+     <section class="sub-header">
+         <nav>
+             <a href="index.html"><img src="images/logo2.jpeg"></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="level.html">LEVEL</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+             </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <h1>Our Ordinary & Advanced Online Programs For 2021</h1>
+     </section>
+
+     <!------ Blog page content -------->
+
+     <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/cert1.jpeg">
+                <h2>Our Ordinary & Advanced Online Programs For 2021</h2>
+                <p>We have a number of programs available for both our levels of students in all the 6 individual classes. These shall be conducted online using various online study and meeting platforms such as zoom and microsoft teams as we continue to battle the tragic covid-19 virus in line with the Ministry of Health Guidelines.</p>
+                <br>
+                <p>Our school continues to be very competitive and on high demand. The Board of Governors approved a 10 year strategic plan for 2011- 2022, aiming at increasing the students' enrolment and facilities uo to 1500. We are at 1651 compared to 1575 last year. Of the 1651, 554 are girls which is 34%. Our school comprises of students of diverse culture from all parts of the world. Equal opportunities are given to all individuals who meet our requirements to be enrolled into the school.</p>
+                <br>
+                <p>In order to instill discipline in our learners and the environment they live and study from, we carefully devised a school program that is comprehensive in nature. In its full format, it takes into account the various aspects of an effective and conducive living and learning environment. On Saturdays the day begins at 5:45am with morning trot, followed by breakfast at 7:30am. Morning preps begin at 8:00 where students do remedial and extra lessons up to 10:30am, followed by communal work then club activities follow. After lunch students go for games and sports. At 6:25pm students go for roll call. On Sunday students wake up for breakfast followed by roll call after which they go for chapel. After chapel they do personal administration and games.</p>
+                <br>
+                <p>We also have Student Awards.The Student Awards are designed to promote and reward outstanding performance by a student at the college. The awards are in different categories i.e Academics, Leadership, sports among others. Students who have demonstrated outstanding achievement in the classroom and have earned honor standing are recognized at the end of each term. Students who have earned outstanding performances receive a Certificate of Recognition.</p>
+                <br>
+                <p>Online verification of academic reports and student enrolment. SchoolAfrica foundation offers a fast, secure and cost-effective service. Verified academic reports can be obtained instantly via the Internet. We make sure you get the full picture on your students’ education history.</p>
+            
+
+            <div class="comment-box">
+
+                <h3>Leave a comment</h3>
+
+                <form class="comment-form" action="blog.php" method="POST">
+                    <label> Name:
+                        <input type="text" name="Name" class="Input" placeholder="Enter Name" required>
+                    </label>
+                    <br><br>
+                    <label> Message: <br>
+                        <textarea name="Comment" class="Input" cols="35" rows="5" placeholder="Your Comment" required></textarea>
+                    </label>
+                    <br><br>
+                    <input type="submit" name="Submit" value="Submit Comment" class="hero-btn red-btn">
+                
+                </form>
+            </div>
+ 
+
+        </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Biology</span>
+                    <span>21</span>
+            </div>
+            <div>
+                <span>Chemistry</span>
+                <span>28</span>
+        </div>
+        <div>
+            <span>Mathematics</span>
+            <span>15</span>
+    </div>
+    <div>
+        <span>Physics</span>
+        <span>34</span>
+</div>
+<div>
+    <span>History</span>
+    <span>42</span>
+</div>
+<div>
+    <span>Geography</span>
+    <span>22</span>
+</div>
+<div>
+    <span>English</span>
+    <span>30</span>
+</div>
+        </div>
+     </section>
+
+<!------ Footer -------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>King's College, Budo was founded in 1906 by the Church Missionary Society(CMS). It was founded on land donated by the Kabaka (King) of Buganda.<br>The original vision was to train sons of Kings and Chiefs, therefore it began as a boys school. In 1934, girls were admitted as well, thus became co-educational. It is now a government aided A- Level mixed Boarding school under Church of Uganda ( Anglican ) of Namirembe Diocese. The current population is 1619 with ⅓ (one third) being female.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-whatsapp"></i>
+    </div>
+    <h5>"GAKYALI MABAGA"</h5>
+    <p>Made with <i class="fa fa-heart-o"></i> by Guloba Moses Stephen</p>
+</section>
+
+<!--------Javascript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+    navLinks.style.right = "0";
+    }
+    function hideMenu() {
+    navLinks.style.right = "-200px";
+    }
+
+</script>
+
+ </body>   
+</html>

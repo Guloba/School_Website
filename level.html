@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title>kingscollegebudo</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/401f848463.js"></script>
+ </head>
+ <body>
+     <section class="sub-header">
+         <nav>
+             <a href="index.html"><img src="images/logo2.jpeg"></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="level.html">LEVEL</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+             </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <h1>Our Levels</h1>
+     </section>
+
+     <!---------- Levels ---------->
+
+     <section class="level">
+        <h1>Levels We Offer</h1>
+        <p>Ordinary-Level and Advanced-Level. Kings College develops girls and boys to tackle challenges of life beyond school. Our academic program sequentially develops young minds to think in a more rounded manner that places concepts and skills ahead of content, through critical thinking and reflection. Students here follow the Current National Curriculum of Uganda.
+The school's curriculum and syllabus is developed to instill a love of learning. We also embed our school values to help students develop positive attitudes and habits for lifelong learning.</p>
+        <div class="row">
+            <div class="level-col">
+                <h3>Ordinary-Level</h3>
+                <p>In Uganda, students receive the Uganda Certificate of Education (UCE) when they finish the four year lower secondary school. It is comparable to GCE O-Level in the UK. UCE is also called "O-Level" by the people in Uganda. The UCE examinations are administered by the Uganda National Examinations Board (UNEB).</p>
+            </div>
+            <div class="level-col">
+               <h3>Advanced-Level</h3>
+               <p>In Uganda, students receive the Uganda Advanced Certificate of Education (UACE) when they finish the 2-year upper secondary school which is also called the HSC. It is comparable to GCE A-Level in the UK. UACE is also known colloquially as "A-Level".</p>
+           </div>
+        </div>
+
+
+    </section>
+
+    <!-------- facilities ----------->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We have a number of facilities which vary from basic educational to extra co-curricular facilities to equip our students with a wide range of necessary life skills to take them through the world with nothing but huge success.</p>
+    
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/lib.png">
+                <h3>Standard Library</h3>
+                <p>Our library is well stocked with all the necessary reading material for all levels and subjects of study with spacious room for concentration to do personal revision.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/pitch.png">
+                <h3>Largest Playground</h3>
+                <p>Our playground is well facilitated with a number of sports capabilities such as football, rugby, basketball court, tennis, cricket, baseball, hockey, handball, volleyball, netball, and many more.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/boardroom.png">
+                <h3>Amazing Boardroom and Cafeteria</h3>
+                <p>Our Boardroom and cafeteria is well spacious and well prepared for various activities such as meetings for both students and staff and other co-curricular activities such as concerts and debates. It is well stocked with merchandise for refreshments and snacks to be made use of.</p>
+            </div>
+        </div>
+    </section>
+
+<!------ Footer -------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>King's College, Budo was founded in 1906 by the Church Missionary Society(CMS). It was founded on land donated by the Kabaka (King) of Buganda.<br>The original vision was to train sons of Kings and Chiefs, therefore it began as a boys school. In 1934, girls were admitted as well, thus became co-educational. It is now a government aided A- Level mixed Boarding school under Church of Uganda ( Anglican ) of Namirembe Diocese. The current population is 1619 with ⅓ (one third) being female.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-whatsapp"></i>
+    </div>
+    <h5>"GAKYALI MABAGA"</h5>
+    <p>Made with <i class="fa fa-heart-o"></i> by Guloba Moses Stephen</p>
+</section>
+
+<!--------Javascript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+    navLinks.style.right = "0";
+    }
+    function hideMenu() {
+    navLinks.style.right = "-200px";
+    }
+
+</script>
+
+ </body>   
+</html>
